@@ -9,7 +9,7 @@ class Database {
     private $hostname = 'localhost';
     private $database = 'casino_brand_toplist';
     private $username = 'root';
-    private $password = '';
+    private $password = 'root';
     private $charset = 'utf8mb4';
     public $connection;
 
