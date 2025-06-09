@@ -9,3 +9,5 @@ use App\Database;
 $database = new Database();
 $connection = $database->connect();
 
+// Initialize router
+$router = new AltoRouter();
