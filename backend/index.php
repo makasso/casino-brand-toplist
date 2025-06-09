@@ -22,6 +22,7 @@ $router->map( 'GET', '/', fn () => $controller->index());
 // Alto router matching request
 $match = $router->match();
 
+
 if( is_array($match) && is_callable( $match['target'] ) ) {
     call_user_func_array( $match['target'], $match['params'] );
 } else {

@@ -19,4 +19,5 @@ class BrandController
         echo json_encode($this->brandModel->getAllBrands());
     }
 
+
 }
