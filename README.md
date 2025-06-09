@@ -47,7 +47,7 @@ docker-compose -f docker/docker-compose.yml up --build
 
 * Frontend listing: [http://localhost:8080/index.html](http://localhost:8080/index.html)
 * Admin manage page: [http://localhost:8080/manage.html](http://localhost:8080/manage.html)
-* Backend API: [http://localhost:8000/api/brands](http://localhost:8000/)
+* Backend API: [http://localhost:8000/](http://localhost:8000/)
 
 ---
 
