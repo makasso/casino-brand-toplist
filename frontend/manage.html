@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Manage Brands</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="manage.css" />
+</head>
+<body>
+<header>
+    <h1>Manage Casino Brand Toplist</h1>
+    <a href="index.html" class="btn">Back to Listing</a>
+</header>
+
+<main class="container">
+    <section class="form-section">
+        <h2>Create Brand</h2>
+        <form id="brand-form">
+            <input name="brand_name" placeholder="Name" required />
+            <input name="brand_image" placeholder="Image URL" required />
+            <input name="rating" type="number" min="1" max="5" placeholder="Rating" required />
+            <input name="country_code" maxlength="2" placeholder="Country (e.g. FR)" />
+            <button class="btn-secondary" type="submit">Create</button>
+        </form>
+        <div id="form-msg"></div>
+    </section>
+
+    <section>
+        <h2>All Brands</h2>
+        <table>
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>Image</th>
+                <th>Rating</th>
+                <th>Country</th>
+                <th>Actions</th>
+            </tr>
+            </thead>
+            <tbody id="brand-table"></tbody>
+        </table>
+    </section>
+</main>
+
+<script src="manage.js"></script>
+</body>
+</html>

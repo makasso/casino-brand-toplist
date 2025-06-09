@@ -12,7 +12,7 @@ function setCountry(code) {
 }
 
 function loadBrands(country) {
-    fetch(`http://localhost:8000/?country=${country}`)
+    fetch(`http://localhost:8000?country=${country}`)
         .then(res => res.json())
         .then(data => {
             brandList.innerHTML = "";

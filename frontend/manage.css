@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #f2f4f8;
+    color: #333;
+    line-height: 1.6;
+}
+/* Container & Card Layout */
+.container {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    margin-bottom: 2rem;
+}
+
+/* Header */
+header {
+    background: #20232a;
+    color: #fff;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header .btn {
+    background: #61dafb;
+    color: #000;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Form */
+.form-section {
+    margin-bottom: 2rem;
+}
+
+
+
+form label {
+    font-weight: 500;
+    margin-bottom: 0.3rem;
+}
+
+form input {
+    padding: 0.6rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+button.btn.primary {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.msg {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: green;
+}
+
+/* Table Styles */
+.table-wrapper {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+    margin-top: 1rem;
+}
+
+th, td {
+    padding: 0.8rem;
+    text-align: left;
+    border-bottom: 1px solid #eaeaea;
+}
+
+td img {
+    width: 40px;
+    border-radius: 4px;
+}
+
+td[contenteditable="true"] {
+    background: #f0f8ff;
+    border-radius: 4px;
+}
+
+/* Action Buttons */
+.btn-danger {
+    background: #dc3545;
+    color: #fff;
+    padding: 0.3rem 0.6rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.85rem;
+}
+
+.btn-secondary {
+    background: #6c757d;
+    color: #fff;
+    padding: 0.6rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
