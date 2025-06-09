@@ -1,5 +1,8 @@
 <?php
 declare(strict_types=1);
+// CORS headers
+header("Access-Control-Allow-Origin: *");
+header("Access-Control-Allow-Headers: Content-Type, CF-IPCountry");
 
 require_once __DIR__ . '/vendor/autoload.php';
 
