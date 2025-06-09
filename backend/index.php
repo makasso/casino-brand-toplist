@@ -18,6 +18,11 @@ $controller = new BrandController($connection);
 
 // Map routes
 $router->map( 'GET', '/', fn () => $controller->index());
+$router->map( 'GET', '/[i:id]', fn ($id) => $controller->show((int) $id));
+$router->map( 'POST', '/', fn () => $controller->store());
+$router->map( 'PUT', '/[i:id]', fn ($id) => $controller->update((int) $id));
+$router->map( 'DELETE', '/[i:id]', fn ($id) => $controller->destroy((int) $id));
+
 
 // Alto router matching request
 $match = $router->match();
